@@ -13,7 +13,7 @@ const useLocalStorage = (key: string, initialValue: any) => {
 };
 
 const getSavedValue = (key: string, initialValue: any) => {
-  const storageValue = JSON.parse(localStorage.getItem(key) || "{}");
+  const storageValue = JSON.parse(localStorage.getItem(key) || "0");
   if (storageValue) return storageValue;
 
   if (initialValue instanceof Function) return initialValue();
