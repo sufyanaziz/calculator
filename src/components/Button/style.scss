@@ -1,0 +1,28 @@
+.button-number:nth-child(1) {
+  border-radius: 5rem;
+  width: 100%;
+}
+.button-operator,
+.button-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  text-transform: capitalize;
+  border: none;
+  font-weight: bold;
+  color: #242524;
+}
+
+.button-operator {
+  background-color: var(--light);
+  &.disabled {
+    background-color: gainsboro;
+  }
+}
+.button-number {
+  background-color: var(--soft);
+}

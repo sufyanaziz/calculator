@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  overflow: hidden;
+}
+
+:root {
+  --light: #fef5ed;
+  --soft: #d3e4cd;
+  --dark: #adc2a9;
+  --darker: #99a799;
+}
+
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--soft);
+}
+
+.calculator {
+  border: 2px solid var(--darker);
+  padding: 12px;
+  height: 90%;
+  width: 285px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}

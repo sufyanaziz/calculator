@@ -1,0 +1,13 @@
+.act {
+  flex: 1;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  text-align: center;
+
+  & div:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}

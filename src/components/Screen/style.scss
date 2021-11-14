@@ -1,0 +1,46 @@
+.screen {
+  display: flex;
+  border-bottom: 1px solid var(--darker);
+  padding: 16px 0;
+  align-items: center;
+  margin-bottom: 12px;
+  color: var(--darker);
+
+  ::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--darker);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--dark);
+  }
+
+  .screen-operator,
+  .screen-payload {
+    p {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+
+  .screen-operator {
+    margin-right: auto;
+    flex: 0.15;
+  }
+  .screen-payload {
+    flex: 1;
+    // background-color: red;
+    white-space: nowrap;
+    // overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 5;
+    text-align: right;
+    overflow-y: auto;
+  }
+}
